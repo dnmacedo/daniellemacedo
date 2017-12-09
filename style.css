@@ -53,7 +53,7 @@ table {
 /*start styling*/
 
 body {
-	color: rgba(0, 0, 0);
+	color: rgb(0, 0, 0);
 	font-family: sans-serif;
 }
 
@@ -64,6 +64,7 @@ main {
 
 header {
 	height: 60px;
+	width: 100%;
 	background-color: rgb(0, 0, 0);
 	color: rgb(255, 255, 255);
 }
@@ -108,8 +109,11 @@ section {
 }
 
 .content {
-	max-width: 1360px;
+	position: relative;
+	width: 100%;
 	display: inline-block;
+	margin: auto;
+	min-height: 600px;
 }
 
 button {
@@ -120,7 +124,7 @@ button {
 .picbutton {
 	position: relative;
 	display: inline-block;
-	margin: 40px;
+	margin-left: 30px;
 	width: 266px;
 	height: 266px;
 }
@@ -133,6 +137,8 @@ button {
 
 .picbutton p {
 	text-align: center;
+	margin: 0;
+	width: 266px;
 }
 
 .picbutton a {
@@ -153,14 +159,74 @@ button {
 
 h1, h2, h3 {
 	font-size: 40px;
-	margin-left: 40px;
+	margin: 20px 40px;
 }
 
-h4, h5, h6 {
+h4, h5, h6, h7, h8 {
 	font-size: 35px;
-	margin-left: 40px;
+	margin: 20px 40px;
+}
+
+.backbutton {
+	margin: 10px 35px;
+	padding: 5px;
+	border-radius: 3px;
+}
+
+button:hover {
+	background-color: black;
+	color: white;
+}
+
+#Logos {
+	display: inline-block;
+}
+
+#Logos img {
+	position: relative;
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	margin: 0;
+}
+
+#packaging img {
+	display: block;
+	margin: 40px auto;
+}
+
+.packagingImg {
+	position: relative;
+	float: right;
 }
 
 p {
-	margin: 20px, 40px;
+	font-size: 20px;
+	width: 500px;
+	margin: 40px;
+}
+
+#me {
+	float: right;
+}
+
+#artThumbs, #photoThumbs {
+	display: inline-block;
+	width: 500px;
+	margin: 40px;
+}
+
+.art, .photo {
+	display: inline-block;
+}
+
+#artSec, #photoSec {
+	display: inline-block;
+	height: 600px;
+	position: absolute;
+	top: 100px;
+}
+
+#previewImage {
+	margin: 40px;
 }
