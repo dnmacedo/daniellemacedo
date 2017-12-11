@@ -55,31 +55,37 @@ table {
 body {
 	color: rgb(0, 0, 0);
 	font-family: sans-serif;
+	display: block;
 }
 
 main {
-	max-width: 1360px;
 	margin: auto;
 }
 
-.background {
-	position: relative;
-	z-index: -1000;
+#background {
+	position: absolute;
+
 }
 
-.background img {
-	position: absolute;
+#background img {
+	position: relative;
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: auto;
 	opacity: 0.6;
 }
 
 header {
+	box-sizing: border-box;
 	height: 60px;
 	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 9999px;
 	color: rgb(255, 255, 255);
+	position: fixed;
+	display: block;
+	top: 0;
+
 }
 
 header img {
@@ -128,12 +134,12 @@ p {
 	line-height: 25px;
 }
 
-.content {
+section {
 	position: relative;
 	width: 100%;
 	display: inline-block;
 	margin: auto;
-	min-height: 600px;
+	min-height: 900px;
 }
 
 button {
