@@ -59,7 +59,7 @@ html {
 
 body {
 	color: white;
-	font-family: 'News Cycle', sans-serif;
+	font-family: 'Yantramanav', sans-serif;
 	display: block;
 	width: 100%;
 	margin: auto;
@@ -80,8 +80,8 @@ header {
 	box-sizing: border-box;
 	height: 60px;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-	z-index: 9999px;
+	background-color: rgba(0, 0, 0, .75);
+	z-index: 9999;
 	color: rgb(255, 255, 255);
 	position: fixed;
 	display: block;
@@ -111,7 +111,7 @@ nav ul{
 
 nav ul li{
 	display: table-cell;
-	font-weight: bold;
+	font-weight: 700;
 	padding: 25px;
 }
 
@@ -125,9 +125,11 @@ nav a {
 }
 
 p {
+	box-sizing: border-box;
 	font-size: 20px;
 	max-width: 600px;
 	line-height: 25px;
+	padding-right: 20px;
 }
 
 section {
@@ -163,7 +165,7 @@ button {
 	width: 266px;
 	height: 266px;
 	color: transparent;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .picbutton p {
@@ -171,6 +173,7 @@ button {
 	margin: 0;
 	width: 266px;
 	line-height: 266px;
+	padding: 0;
 }
 
 .picbutton a:hover {
@@ -180,15 +183,31 @@ button {
 
 .heading {
 	font-size: 40px;
-	margin: 20px 0;
+	margin: 30px 0;
 	display: block;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .subheading {
 	font-size: 35px;
-	margin: 20px 0;
+	margin: 30px 0;
 	display: block;
+}
+
+#about p {
+	height: 100px;
+}
+
+#Logos p {
+	height: 200px;
+}
+
+#packaging p {
+	height: 200px;
+}
+
+#packagingImg {
+	margin-bottom: 30px;
 }
 
 #logoImgs {
