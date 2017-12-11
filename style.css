@@ -59,6 +59,7 @@ body {
 }
 
 main {
+	position: relative;
 	margin: auto;
 }
 
@@ -121,10 +122,6 @@ a {
 
 nav a {
 	color: rgb(255, 255, 255);
-}
-
-section {
-	position: relative;
 }
 
 p {
@@ -193,17 +190,6 @@ h4, h5, h6, h7, h8 {
 	margin: 20px 40px;
 }
 
-.backbutton {
-	margin: 10px 35px;
-	padding: 5px;
-	border-radius: 3px;
-}
-
-button:hover {
-	background-color: black;
-	color: white;
-}
-
 #Logos {
 	display: inline-block;
 }
@@ -216,12 +202,12 @@ button:hover {
 	margin: 0;
 }
 
-#packaging img {
+#packagingPic {
 	display: block;
 	margin: 40px auto;
 }
 
-.packagingImg {
+#packaging img {
 	position: relative;
 	float: right;
 }
