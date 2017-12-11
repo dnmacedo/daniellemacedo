@@ -58,15 +58,22 @@ html {
 }
 
 body {
-	color: rgb(0, 0, 0);
-	font-family: sans-serif;
+	color: white;
+	font-family: 'News Cycle', sans-serif;
 	display: block;
 	width: 100%;
 	margin: auto;
 	background-image: url("images/background.png");
 	background-repeat: no-repeat;
 	background-position: top;
-	background-size: contain;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+main {
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	margin: auto;
 }
 
 header {
@@ -125,9 +132,9 @@ p {
 
 section {
 	box-sizing: border-box;
+	min-height: 900px;
 	width: 90%;
 	margin: auto;
-	min-height: 900px;
 }
 
 button {
@@ -137,14 +144,14 @@ button {
 
 #links {
 	box-sizing: border-box;
-	width: 90%;
-
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
 }
 
 .picbutton {
 	position: relative;
-	display: inline-block;
-	margin: 60px;
+	display: block;
 	width: 266px;
 	height: 266px;
 }
@@ -174,51 +181,53 @@ button {
 .heading {
 	font-size: 40px;
 	margin: 20px 0;
+	display: block;
+	font-weight: bold;
 }
 
 .subheading {
 	font-size: 35px;
 	margin: 20px 0;
+	display: block;
 }
 
 #logoImgs {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 #Logos img {
 	width: 340px;
 	height: 340px;
+	margin: 30px auto;
 }
 
 #me {
 	float: right;
 }
 
-#artSec, #photoSec {
-	float: right;
-	top: 0;
-}
-
-#artTitle, #photoTitle {
-	margin-top: 0;
-}
-
-#photoSec {
-	width: 400px;
-}
-
-#artThumbs {
-	width: 600px;
+#artwork, #photography {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
+	justify-content: space-around;
 }
 
-#photoThumbs {
+#artSec, #photoSec {
+	min-width: 400px;
+	max-width: 600px;
+	margin: 0 20px;
+}
+
+#artThumbs, #photoThumbs {
 	display: flex;
 	flex-wrap: wrap;
 }
 
 #artThumbs img, #photoThumbs img {
 	margin: 5px;
+}
+
+#packaging img {
+	float: right;
 }
