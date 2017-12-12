@@ -134,9 +134,9 @@ p {
 
 section {
 	box-sizing: border-box;
-	min-height: 900px;
+	min-height: 500px;
 	width: 90%;
-	margin: auto;
+	margin: 60px auto;
 }
 
 button {
@@ -249,4 +249,8 @@ button {
 
 #packaging img {
 	float: right;
+}
+
+#splashpage {
+	height: 100%;
 }
