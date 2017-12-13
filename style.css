@@ -124,6 +124,11 @@ nav a {
 	color: rgb(255, 255, 255);
 }
 
+.shortcuts {
+	height: 100px;
+	display: block;
+}
+
 p {
 	box-sizing: border-box;
 	font-size: 20px;
