@@ -133,6 +133,19 @@ p {
 	padding-right: 20px;
 }
 
+#splashpage {
+	width: 100%;
+	min-height: 700px;
+	display: flex;
+	justify-content: space-around;
+}
+
+#splashpage img {
+	width: 338px;
+	height: 213px;
+	margin-top: 13%;
+}
+
 section {
 	box-sizing: border-box;
 	min-height: 500px;
