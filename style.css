@@ -141,24 +141,24 @@ p {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: -10px;
 }
 .parallax__layer--base {
   transform: translateZ(0);
 }
 .parallax__layer--back {
-  transform: translateZ(-1px) scale(2);
+  transform: translateZ(-2px) scale(3);
 }
 
 #graphicsP {
-	transform: translateZ(-9px) scale(10);
+	transform: translateZ(-17px) scale(18);
 }
 
 /* for different scrolling speeds */
 
 section {
 	box-sizing: border-box;
-	min-height: 500px;
+	height: 100%;
 	width: 90%;
 	margin: 60px auto;
 }
@@ -182,9 +182,7 @@ button {
 }
 
 #links {
-	box-sizing: border-box;
 	display: flex;
-	flex-wrap: nowrap;
 	justify-content: space-around;
 }
 
@@ -193,6 +191,7 @@ button {
 	display: block;
 	width: 266px;
 	height: 266px;
+	margin: auto;
 }
 
 .picbutton a {
