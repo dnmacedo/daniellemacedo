@@ -63,11 +63,6 @@ body {
 	display: block;
 	width: 100%;
 	margin: auto;
-	background-image: url("images/background.png");
-	background-repeat: no-repeat;
-	background-position: top;
-	background-size: cover;
-	background-attachment: fixed;
 }
 
 main {
@@ -133,24 +128,52 @@ p {
 	padding-right: 20px;
 }
 
-#splashpage {
-	width: 100%;
-	min-height: 700px;
-	display: flex;
-	justify-content: space-around;
+/* for different scrolling speeds */
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
 }
 
-#splashpage img {
-	width: 338px;
-	height: 213px;
-	margin-top: 13%;
+#graphicsP {
+	transform: translateZ(-9px) scale(10);
 }
+
+/* for different scrolling speeds */
 
 section {
 	box-sizing: border-box;
 	min-height: 500px;
 	width: 90%;
 	margin: 60px auto;
+}
+
+#homePage {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+#homePage img {
+	position: relative;
+	top: 150px;
+	width: 234px;
+	height: 234px;
 }
 
 button {
