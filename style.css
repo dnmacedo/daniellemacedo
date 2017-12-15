@@ -287,6 +287,16 @@ button {
 	float: right;
 }
 
+#posters {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#posters img {
+	margin: 40px;
+}
+
 #splashpage {
 	height: 100%;
 }
