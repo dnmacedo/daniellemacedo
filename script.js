@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 
   function preview(fileName, title, description){
 
-      previewImg.src = "images/artwork/" + fileName;
+      previewImg.src = "images/" + fileName;
       artTitle.innerHTML = title;
       artDes.innerHTML = description;
 
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function(event){
       }
     }
 
-    myMsg.innerHTML="Thank you" + entry[0] +" for visiting my site and reaching out. I have receieved your message via email and you'll be hearing back from me fairly soon via the contact info you provided. " + entry[1];
+    myMsg.innerHTML="Thank you" + entry[0] +" for visiting my site and reaching out. I have receieved your message via email and if you left me contact info, you'll be hearing back from me fairly soon. <br>Contact info: " + entry[1];
 
     return false;
   }
