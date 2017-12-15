@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Dani By Design</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css?family=Yantramanav:400,700" rel="stylesheet">
+  <meta charset="utf-8">
+  <script src="script.js"></script>
+
+  <!-- FAVICON commands, allows for access to favicon-->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/manifest.json">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#f16d8f">
+  <meta name="theme-color" content="#ffffff">
+
+  <!--end of FAVICON commands-->
+
+</head>
+
+<body>
+
+  <header>
+
+    <a href="http://dnmacedo.github.io/portfolio"><img src="../images/dbdlogo.svg" alt="dani by design logo"></a>
+
+    <nav>
+      <ul>
+        <li><a href = "http://dnmacedo.github.io/portfolio">HOME</a></li>
+        <li><a href = "http://dnmacedo.github.io/portfolio/artwork" title="artwork">ARTWORK</a></li>
+        <li><a href = "http://dnmacedo.github.io/portfolio/graphics" title="graphics">GRAPHICS</a></li>
+        <li><a href = "http://dnmacedo.github.io/portfolio/photography" title="photography">PHOTOS</a></li>
+        <li><a href = "http://dnmacedo.github.io/portfolio/contact" title="contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <div class="parallax">
+
+    <div class="parallax__layer parallax__layer--back">
+
+      <img src="../images/background3.png" alt="Northern Cali landscape">
+
+    </div>
+
+    <div class="parallax__layer parallax__layer--base">
+
+      <main>
+
+
+        <section>
+
+          <h1 class="heading">Contact</h1>
+
+          <p id="formP">*If you would like me to contact you in return, please be sure to leave your phone, email, or both!</p>
+
+          <article>
+            <form method="post" name="emailForm" action="form-to-email.php">
+              <div>
+                <label for="name">Your name*</label>
+                <input type="text" name="name">
+              </div>
+
+              <div>
+                <label for="email">Contact Info (email/phone)</label>
+                <input type="text" name="email">
+              </div>
+
+              <div>
+                <label for="message">Leave a message*</label>
+                <textarea name="message"></textarea>
+              </div>
+
+              <!--add a div with label and text input with name=userColor-->
+
+              <input type="submit" value="send"/>
+
+            </form>
+
+          </article>
+
+          <aside>
+            <p id = "myMsg" class="hidden"></p>
+            <div id="close">&otimes;</div>
+          </aside>
+
+        </section>
+
+              <footer>
+                <button>Resume</button>
+
+                <button>Contact</button>
+              </footer>
+
+            </main>
+
+          </div>
+
+        </div>
+
+      </body>
+
+      </html>
