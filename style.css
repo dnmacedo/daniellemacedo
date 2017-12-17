@@ -153,6 +153,10 @@ p {
 	transform: translateZ(-17px) scale(18);
 }
 
+#homePage_parallax {
+	transform: translateZ(-2px) scale(3);
+}
+
 /* for different scrolling speeds */
 
 section {
@@ -269,10 +273,11 @@ button {
 }
 
 #artSec, #photoSec {
-	min-width: 400px;
-	max-width: 600px;
+	min-width: 450px;
+	max-width: 700px;
 	margin: 0 20px;
 }
+
 
 #artThumbs, #photoThumbs {
 	display: flex;
@@ -281,6 +286,10 @@ button {
 
 #artThumbs img, #photoThumbs img {
 	margin: 5px;
+}
+
+#photoTitle {
+	margin-top: 0;
 }
 
 #packaging img {
