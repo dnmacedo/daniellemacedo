@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 
     });
 
-    navLink[i].addEventListener("click",
+    navLink[i].addEventListener("clicked",
       function(){
         this.style.color ="pink";
     });
