@@ -110,7 +110,8 @@ nav ul{
 nav ul li{
 	display: table-cell;
 	font-weight: 400;
-	padding: 22px 25px;
+	padding: 22px 0;
+	position: relative;
 	background-color: rgba(100, 100, 100, 0);
 	transition: all 0.7s ease;
 }
@@ -125,8 +126,8 @@ a {
 }
 
 nav a {
+	padding: 21px 25px;
 	color: rgb(255, 255, 255);
-	height: 60px;
 }
 
 
