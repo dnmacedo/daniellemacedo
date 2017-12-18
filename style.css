@@ -110,7 +110,7 @@ nav ul{
 nav ul li{
 	display: table-cell;
 	font-weight: 400;
-	padding: 25px;
+	padding: 22px 25px;
 }
 
 a {

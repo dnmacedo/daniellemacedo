@@ -18,13 +18,13 @@ document.addEventListener("DOMContentLoaded", function(event){
   for(var i = 0; i<navLink.length; i++){
 
     navLink[i].addEventListener("mouseover", function(){
-      this.style.backgroundColor = "blue";
+      this.style.backgroundColor = "grey";
 
     });
 
-    navLink[i].addEventListener("clicked",
+    navLink[i].addEventListener("mouseout",
       function(){
-        this.style.color ="pink";
+        this.style.backgroundColor = "";
     });
 
   }
