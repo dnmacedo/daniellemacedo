@@ -34,11 +34,11 @@ document.addEventListener("DOMContentLoaded", function(event){
 
   // when link is selected, make it appear different than other nav links
 
-    for(var = i; i<5; i++){
+    for(var i; i<5; i++){
 
       navLink[i].addEventListener('click',
         function(){
-          this.style.display = "background-color:pink";
+          this.style.color:"pink";
       });
 
     }
