@@ -3,26 +3,16 @@ document.addEventListener("DOMContentLoaded", function(event){
 
   // nav events
 
+  console.log("reading");
 
     // end of nav events
 
   // all thumbnails
 
-  var jMrazLink = document.getElementById("jMrazLink");
-  var threeWomenLink = document.getElementById("threeWomenLink");
-  var beachLink = document.getElementById("beachLink");
-  var fmaLink = document.getElementById("fmaLink");
-  var foxLink = document.getElementById("foxLink");
-  var leoLink = document.getElementById("leoLink");
-  var roxasLink = document.getElementById("roxasLink");
-  var roxLink = document.getElementById("roxLink");
-  var spiderMLink = document.getElementById("spiderMLink");
-  var stillLifeLink = document.getElementById("stillLifeLink");
-  var venLink = document.getElementById("venLink");
+  var elements = document.querySelectorAll("li");
+  var c = 0;
 
-// thumbnail array
-  var artThumbs = [jMrazLink, threeWomenLink, beachLink, fmaLink, foxLink, leoLink, roxasLink, roxLink, spiderMLink, stillLifeLink, venLink];
-
+  
 // all file names
   var jMrazFile = "jMraz.jpg";
   var threeWomenFile = "3women.jpg";
@@ -83,9 +73,9 @@ document.addEventListener("DOMContentLoaded", function(event){
 
   }
 
-  for(var i = 0; i<artThumbs.length; i++){
+  for(var i = 0; i < elements.length; i++){
 
-    artThumbs[i].addEventListener("click", preview(fileName[i], title[i], description[i]));
+    elements[i].addEventListener("click", preview(fileName[i], title[i], description[i]));
 
   }
 
