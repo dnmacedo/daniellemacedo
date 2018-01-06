@@ -236,7 +236,7 @@ section {
 	display: block;
 }
 
-.art:hover {
+.art:hover, .photo:hover {
 	width: 110px;
 	height: 110px;
 	cursor: pointer;
