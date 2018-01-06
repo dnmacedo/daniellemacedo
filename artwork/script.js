@@ -14,20 +14,20 @@ document.addEventListener("DOMContentLoaded", function(event){
 
 
 // all file names
-  var jMrazFile = "jMraz.jpg";
-  var threeWomenFile = "3women.jpg";
-  var beachFile = "beach.jpg";
-  var fmaFile = "fma.jpg";
-  var foxFile = "fox.jpg";
-  var leoFile = "leo.jpg";
-  var roxasFile = "roxas.jpg";
-  var roxFile = "rox.jpg";
-  var spiderMFile = "spiderM.jpg";
-  var stillLifeFile = "stillLife.jpg";
-  var venFile = "ven.jpg";
+  // var jMrazFile = "jMraz.jpg";
+  // var threeWomenFile = "3women.jpg";
+  // var beachFile = "beach.jpg";
+  // var fmaFile = "fma.jpg";
+  // var foxFile = "fox.jpg";
+  // var leoFile = "leo.jpg";
+  // var roxasFile = "roxas.jpg";
+  // var roxFile = "rox.jpg";
+  // var spiderMFile = "spiderM.jpg";
+  // var stillLifeFile = "stillLife.jpg";
+  // var venFile = "ven.jpg";
 
   // filename array
-  var fileName = [jMrazFile, threeWomenFile, beachFile, fmaFile, foxFile, leoFile, roxasFile, roxFile, spiderMFile, stillLifeFile, venFile];
+  var fileName = ["jMraz.jpg", "3women.jpg", "beach.jpg", "fma.jpg", "fox.jpg", "leo.jpg", "roxas.jpg", "rox.jpg", "spiderM.jpg", "stillLife.jpg", "ven.jpg"];
 
   // all titles
   var jMrazTitle = "Portrait #1";
@@ -72,18 +72,20 @@ document.addEventListener("DOMContentLoaded", function(event){
   //     artDes.innerHTML = z;
   //
   // }
+  var i;
+  for(i = 0; i < elements.length; i++){
 
-  // for(var i = 0; i < elements.length; i++){
+    console.log("looping");
 
-    elements[1].addEventListener("click", function(){
+    elements[i].addEventListener("click", function(){
 
-      previewImg.src = "images/" + fileName[1];
-      artTitle.innerHTML = title[1];
-      artDes.innerHTML = description[1];
+      previewImg.src = "images/" + fileName[i];
+      artTitle.innerHTML = title[i];
+      artDes.innerHTML = description[i];
 
     });
-  //
-  // }
+
+  }
 
 
   });
