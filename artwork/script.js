@@ -65,23 +65,17 @@ document.addEventListener("DOMContentLoaded", function(event){
   var artTitle = document.getElementById("artTitle");
   var artDes = document.getElementById("artDes");
 
-  // function preview(x, y, z){
-  //
-  //     previewImg.src = "images/" + x;
-  //     artTitle.innerHTML = y;
-  //     artDes.innerHTML = z;
-  //
-  // }
+  function preview(fileName, title, description){
+
+    previewImg.src = "images/" + fileName;
+    artTitle.innerHTML = title;
+    artDes.innerHTML = description;
+
+  }
 
   for(var i = 0; i < elements.length; i++){
 
-    elements[i].addEventListener("click", function(fileName, title, description){
-
-      previewImg.src = "images/" + fileName[i];
-      artTitle.innerHTML = title[i];
-      artDes.innerHTML = description[i];
-
-    });
+    elements[i].addEventListener("click", preview(fileName[i], title[i], description[i]));
 
   }
 
