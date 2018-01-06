@@ -12,54 +12,13 @@ document.addEventListener("DOMContentLoaded", function(event){
   var elements = document.querySelectorAll("li");
   var c = 0;
 
-
-// all file names
-  // var jMrazFile = "jMraz.jpg";
-  // var threeWomenFile = "3women.jpg";
-  // var beachFile = "beach.jpg";
-  // var fmaFile = "fma.jpg";
-  // var foxFile = "fox.jpg";
-  // var leoFile = "leo.jpg";
-  // var roxasFile = "roxas.jpg";
-  // var roxFile = "rox.jpg";
-  // var spiderMFile = "spiderM.jpg";
-  // var stillLifeFile = "stillLife.jpg";
-  // var venFile = "ven.jpg";
-
   // filename array
   var fileName = ["jMraz.jpg", "3women.jpg", "beach.jpg", "fma.jpg", "fox.jpg", "leo.jpg", "roxas.jpg", "rox.jpg", "spiderM.jpg", "stillLife.jpg", "ven.jpg"];
 
-  // all titles
-  var jMrazTitle = "Portrait #1";
-  var threeWomenTitle = "Three Women";
-  var beachTitle = "Beach";
-  var fmaTitle = "Anime Multi-portrait";
-  var foxTitle = "Hipster Fox";
-  var leoTitle = "Portrait #2";
-  var roxasTitle = "Roxas #1";
-  var roxTitle = "Rox #2";
-  var spiderMTitle = "Spiderman";
-  var stillLifeTitle = "Still Life";
-  var venTitle = "Ventus";
-
-  var title = [jMrazTitle, threeWomenTitle, beachTitle, fmaTitle, foxTitle, leoTitle, roxasTitle, roxTitle, spiderMTitle, stillLifeTitle, venTitle];
-
-  // all descriptions
-
-  var jMrazDes = "Portrait of singer/songwriter Jason Mraz, charcoal on bristol paper, 2012";
-  var threeWomenDes = "Colored pencil on tissue paper, 2011";
-  var beachDes = "Watercolor, watercolor paper, 2011";
-  var fmaDes = "Oil paint on canvas, 2014";
-  var foxDes = "Digital illustration, 2015";
-  var leoDes = "Oil pastel on paper, 2012";
-  var roxasDes = "Pencil on paper, 2009";
-  var roxDes = "Pencil on paper, 2010";
-  var spiderMDes = "Charcoal on paper, 2011";
-  var stillLifeDes = "Pencil on paper, 2008";
-  var venDes = "Pencil on Paper, 2011";
+  var title = ["Portrait #1", "Three Women", "Beach", "Anime Multi-portrait", "Hipster Fox", "Portrait #2", "Roxas #1", "Rox #2", "Spiderman", "Still Life", "Ventus"];
 
   // description array
-  var description = [jMrazDes, threeWomenDes, beachDes, fmaDes, foxDes, leoDes, roxasDes, roxDes, spiderMDes, stillLifeDes, venDes];
+  var description = ["Portrait of singer/songwriter Jason Mraz, charcoal on bristol paper, 2012", "Colored pencil on tissue paper, 2011", "Watercolor, watercolor paper, 2011", "Oil paint on canvas, 2014", "Digital illustration, 2015", "Oil pastel on paper, 2012", "Pencil on paper, 2009", "Pencil on paper, 2010", "Charcoal on paper, 2011", "Pencil on paper, 2008", "Pencil on Paper, 2011"];
 
   var previewImg = document.getElementById("previewImg");
   var artTitle = document.getElementById("artTitle");
