@@ -73,17 +73,17 @@ document.addEventListener("DOMContentLoaded", function(event){
   //
   // }
 
-  for(var i = 0; i < elements.length; i++){
+  // for(var i = 0; i < elements.length; i++){
 
-    elements[i].addEventListener("click", function(){
+    elements[1].addEventListener("click", function(){
 
-      previewImg.src = "images/" + fileName[i];
-      artTitle.innerHTML = title[i];
-      artDes.innerHTML = description[i];
+      previewImg.src = "images/" + fileName[1];
+      artTitle.innerHTML = title[1];
+      artDes.innerHTML = description[1];
 
     });
-
-  }
+  //
+  // }
 
 
   });
