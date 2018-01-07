@@ -64,10 +64,14 @@ body {
 	display: block;
 	width: 100%;
 	margin: auto;
+	background-image: url("images/background2.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 main {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, .5);
 	width: 100%;
 	margin: auto;
 }
@@ -79,6 +83,16 @@ header {
 	display: block;
 	top: 0;
 	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#homeHeader {
+	background-color: transparent;
+	transition: all 0.7s ease;
+}
+
+.black {
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 header img {
@@ -106,12 +120,7 @@ nav ul li{
 	font-weight: 400;
 	padding: 22px 0;
 	position: relative;
-	background-color: rgba(100, 100, 100, 0);
 	transition: all 0.7s ease;
-}
-
-.shrink {
-	background-color: rgba(100, 100, 100, 1);
 }
 
 a {
@@ -122,6 +131,11 @@ a {
 nav a {
 	padding: 21px 25px;
 	color: rgb(255, 255, 255);
+	transition: all 0.7s ease;
+}
+
+.pink {
+	background-color: #f16d8f;
 }
 
 
@@ -194,7 +208,7 @@ section {
 	height: 266px;
 }
 
-.picbutton a {
+.picbutton p {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -202,19 +216,16 @@ section {
 	height: 266px;
 	color: transparent;
 	font-weight: 700;
-}
-
-.picbutton p {
 	text-align: center;
 	margin: 0;
-	width: 266px;
 	line-height: 266px;
 	padding: 0;
 }
 
-.picbutton a:hover {
+.picbutton p:hover {
 	background-color: rgba(0, 0, 0, 0.75);
 	color: white;
+	cursor: pointer;
 }
 
 .heading {
@@ -303,17 +314,17 @@ section {
 	margin: 5px;
 }
 
-#packaging img {
+#Packaging img {
 	float: right;
 }
 
-#posters {
+#Posters div {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-#posters img {
+#Posters img {
 	margin: 40px;
 }
 
