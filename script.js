@@ -1,9 +1,17 @@
 document.addEventListener("DOMContentLoaded", function(event){
   console.log("DOM fully loaded and parsed");
 
-  // nav link ids
-  
+  var header = document.querySelectorAll("header");
 
-    // end of nav events
+  var scroll = window.scroll();
+
+  if(scroll > 200){
+    header.className = "black";
+
+  } else {
+
+    header.className = "";
+  }
+
 
 });

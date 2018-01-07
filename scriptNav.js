@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function(event){
   for(var i = 0; i<navLink.length; i++){
 
     navLink[i].addEventListener("mouseover", function(){
-      this.className = "shrink";
+      this.className = "pink";
 
     });
 
