@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function(event){
   var title = ["Portrait #1", "Three Women", "Beach", "Anime Multi-portrait", "Hipster Fox", "Portrait #2", "Roxas #1", "Rox #2", "Spiderman", "Still Life", "Ventus"];
 
   // description array
-  var description = ["Portrait of singer/songwriter Jason Mraz, charcoal on bristol paper, 2012", "Colored pencil on tissue paper, 2011", "Watercolor, watercolor paper, 2011", "Oil paint on canvas, 2014", "Digital illustration, 2015", "Oil pastel on paper, 2012", "Pencil on paper, 2009", "Pencil on paper, 2010", "Charcoal on paper, 2011", "Pencil on paper, 2008", "Pencil on Paper, 2011"];
+  var description = ["Portrait of Jason Mraz, charcoal on bristol paper, 2012", "Colored pencil on tissue paper, 2011", "Watercolor, watercolor paper, 2011", "Oil paint on canvas, 2014", "Digital illustration, 2015", "Oil pastel on paper, 2012", "Pencil on paper, 2009", "Pencil on paper, 2010", "Charcoal on paper, 2011", "Pencil on paper, 2008", "Pencil on Paper, 2011"];
 
   var previewImg = document.getElementById("previewImg");
   var artTitle = document.getElementById("artTitle");
@@ -40,7 +40,15 @@ document.addEventListener("DOMContentLoaded", function(event){
 
     elements[i].addEventListener("click", preview(fileName[i], title[i], description[i]));
 
-    console.log("looping");
+    elements[i].addEventListener("mouseover", function(){
+
+      this.style.transition = "background-color 1s";
+    });
+
+    elements[i].addEventListener("mouseout", function(){
+
+      this.style.transition = "background-color 1s";
+    });
 
   }
 
