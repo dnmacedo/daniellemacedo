@@ -9,8 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 
   // all thumbnails
 
-  var elements = document.querySelectorAll("li");
-  var c = 0;
+  var elements = document.getElementsByClassName("art");
 
   // filename array
   var fileName = ["jMraz.jpg", "3women.jpg", "beach.jpg", "fma.jpg", "fox.jpg", "leo.jpg", "roxas.jpg", "rox.jpg", "spiderM.jpg", "stillLife.jpg", "ven.jpg"];
@@ -24,27 +23,25 @@ document.addEventListener("DOMContentLoaded", function(event){
   var artTitle = document.getElementById("artTitle");
   var artDes = document.getElementById("artDes");
 
-  // function preview(x, y, z){
-  //
-  //     previewImg.src = "images/" + x;
-  //     artTitle.innerHTML = y;
-  //     artDes.innerHTML = z;
-  //
-  // }
-  var i;
-  for(i = 0; i < elements.length; i++){
+  function preview(x, y, z){
 
-    console.log("looping");
+    return function(){
 
-    elements[i].addEventListener("click", function(){
+      previewImg.src = "images/" + x;
+      artTitle.innerHTML = y;
+      artDes.innerHTML = z;
 
-      previewImg.src = "images/" + fileName[i];
-      artTitle.innerHTML = title[i];
-      artDes.innerHTML = description[i];
-
-    });
+    }
 
   }
 
+
+  for(var i = 0; i < elements.length; i++){
+
+    elements[i].addEventListener("click", preview(fileName[i], title[i], description[i]));
+
+    console.log("looping");
+
+  }
 
   });
