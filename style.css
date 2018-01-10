@@ -170,6 +170,7 @@ table {
 	.parallax__layer--base {
 	  transform: translateZ(0);
 	}
+
 	.parallax__layer--back {
 	  transform: translateZ(-1px) scale(2);
 	}
@@ -457,11 +458,16 @@ table {
 	}
 
 /* for iPad Pro (horizontal) and large computer screens */
-@media (min-width: 1401px){
+@media (max-width: 1400px){
 
 	header img {
 		top: 15%;
 	}
+
+	.parallax__layer--back {
+		transform: translateZ(-2px) scale(3);
+	}
+
 }
 
 /* for iPad (horizontal) or iPad Pro (vertical) */
