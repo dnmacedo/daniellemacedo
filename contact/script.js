@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 
 var entry = [];
 var close = document.getElementById("close");
+var prompt = document.querySelectorAll("aside");
 
 // capture submit event
 document.emailForm.onsubmit = submitForm;
