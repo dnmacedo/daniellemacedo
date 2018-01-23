@@ -378,7 +378,7 @@ table {
 	  color:black;
 	}
 
-	input[type="submit"] {
+	input[type="submit"], input[type="reset"] {
 	  position:relative;
 		width: 1in;
 	  top:14px;
