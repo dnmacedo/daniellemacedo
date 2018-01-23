@@ -39,6 +39,7 @@ function submitForm() {
 
       close.addEventListener('click', function(){
         prompt.style.display="none";
+      });
     }
   }
 
