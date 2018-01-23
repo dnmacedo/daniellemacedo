@@ -32,19 +32,20 @@ function submitForm() {
       alert("Let's not be strangers, please tell me your name!");
     } else if (entry[2] =="") {
       alert("Don't leave me hanging, leave a message!")
+    } else {
+      prompt.style.display="block";
+
+      myMsg.innerHTML="Thank you" + entry[0] +" for visiting my site and reaching out. I have receieved your message via email and if you left me contact info, you'll be hearing back from me fairly soon. <br>Contact info: " + entry[1];
+
+      close.addEventListener('click', function(){
+        prompt.style.display="none";
     }
   }
-
-  prompt.style.display="block";
-
-  myMsg.innerHTML="Thank you" + entry[0] +" for visiting my site and reaching out. I have receieved your message via email and if you left me contact info, you'll be hearing back from me fairly soon. <br>Contact info: " + entry[1];
-
 
   return false;
 }
 
-close.addEventListener('click', function(){
-  prompt.style.display="none";
+
 });
 
 });
