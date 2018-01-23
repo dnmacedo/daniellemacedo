@@ -33,7 +33,7 @@ function submitForm() {
     } else if (entry[2] =="") {
       alert("Don't leave me hanging, leave a message!")
     } else {
-      aside.style.display="block";
+      prompt.style.display="block";
       myMsg.innerHTML="Thank you" + entry[0] +" for visiting my site and reaching out. I have receieved your message via email and if you left me contact info, you'll be hearing back from me fairly soon. <br>Contact info: " + entry[1];
 
     }
@@ -43,7 +43,7 @@ function submitForm() {
 }
 
 close.addEventListener('click', function(){
-  aside.style.display="none";
+  prompt.style.display="none";
 });
 
 });
