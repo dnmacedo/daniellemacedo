@@ -1,10 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event){
   console.log("DOM fully loaded and parsed");
 
-  // nav functions
-
-
-
     // end of nav functions
 
     // function for form
