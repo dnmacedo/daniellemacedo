@@ -5,7 +5,7 @@
 <head>
   <title>Dani By Design</title>
   <link rel="stylesheet" href="../style.css">
-  <link href="https://fonts.googleapis.com/css?family=Yantramanav:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Yantramanav:100,300,400" rel="stylesheet">
   <meta charset="utf-8">
   <script src="script.js"></script>
   <script src="../scriptNav.js"></script>
@@ -49,25 +49,26 @@
           <p id="formP">*If you would like me to contact you in return, please be sure to leave your phone, email, or both!</p>
 
           <article>
-            <form method="post" name="emailForm" action="form-to-email.php">
+            <form method="post" name="emailForm" action="contact.php">
               <div>
                 <label for="name">Your name*</label>
-                <input type="text" name="name">
+                <input type="text" name="cf_name">
               </div>
 
               <div>
                 <label for="email">Contact Info (email/phone)</label>
-                <input type="text" name="contact_info">
+                <input type="text" name="cf_email">
               </div>
 
               <div>
                 <label for="message">Leave a message*</label>
-                <textarea name="message"></textarea>
+                <textarea name="cf_message"></textarea>
               </div>
 
               <!--add a div with label and text input with name=userColor-->
 
               <input type="submit" value="send"/>
+              <input type="reset" value="Clear">
 
             </form>
 
@@ -90,6 +91,8 @@
             <a href="https://www.linkedin.com/in/dnmacedo/"><img src="../images/linkedInIcon.png" alt="linkedIn icon" width="30" height="30"></a>
 
           </div>
+
+          <p id="copyright">Copyright © Dani by Design. Design by Danielle Macedo</p>
 
         </footer>
 
