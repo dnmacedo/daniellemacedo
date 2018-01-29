@@ -483,7 +483,24 @@ table {
 
 /* for iPad (vertical) */
 @media (max-width: 799px) {
+	.picbutton {
+		display: flex;
+		position: relative;
+		width: 266px;
+		height: 266px;
+		margin: auto;
+		padding-bottom: 40px;
+	}
 
+	.picbutton p {
+		background-color: rgba(0, 0, 0, 0.50);
+		color: white;
+	}
+
+	.links {
+		width: 100%;
+		display: block;
+	}
 }
 
 /* For mobile version */
