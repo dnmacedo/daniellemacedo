@@ -483,6 +483,61 @@ table {
 }
 
 /* For mobile version */
-@media (max-width: 450) {
+@media (max-width: 450px) {
+
+	#dbdlogo_link {
+		display: none;
+	}
+
+	nav {
+		display: none;
+		width: 100%;
+		background-color: grey;
+	}
+
+	nav ul{
+		display: block;
+	}
+
+	nav ul li{
+		display: inline-block;
+		font-weight: 400;
+		padding: 22px 0;
+		border-bottom: 4px;
+		border-color: white;
+		position: relative;
+	}
+
+	a {
+		text-decoration: none;
+		color: rgb(0, 0, 0);
+		font-weight: 300;
+	}
+
+	nav a {
+		padding: 21px 25px;
+		color: rgb(255, 255, 255);
+		transition: all 0.7s ease;
+	}
+
+	.picbutton {
+		display: flex;
+		position: relative;
+		width: 266px;
+		height: 266px;
+		margin: auto;
+		padding-bottom: 40px;
+	}
+
+	.picbutton p {
+		background-color: rgba(0, 0, 0, 0.50);
+		color: white;
+	}
+
+	.links {
+		width: 100%;
+		display: block;
+	}
+
 
 }
