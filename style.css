@@ -72,6 +72,10 @@ table {
 		background-size: cover;
 	}
 
+	#up_arrow, #down_arrow {
+		display: none;
+	}
+
 	main {
 		background-color: rgba(0, 0, 0, .5);
 		width: 100%;
@@ -489,8 +493,26 @@ table {
 		display: none;
 	}
 
+	/* up arrow for back to top */
+
+	/* #up_arrow {
+		display: flex;
+		position: absolute;
+		bottom: 0;
+		margin: auto;
+		z-index: 99;
+	} */
+
+	#down_arrow {
+		display: block;
+		position: relative;
+		top: 0;
+		margin: auto;
+		z-index: 4;
+	}
+
 	nav {
-		display: none;
+		display: block;
 		width: 100%;
 		background-color: grey;
 	}
@@ -500,7 +522,7 @@ table {
 	}
 
 	nav ul li{
-		display: inline-block;
+		display: flex;
 		font-weight: 400;
 		padding: 22px 0;
 		border-bottom: 4px;
@@ -512,6 +534,7 @@ table {
 		text-decoration: none;
 		color: rgb(0, 0, 0);
 		font-weight: 300;
+		margin: auto;
 	}
 
 	nav a {
