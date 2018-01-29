@@ -10,23 +10,23 @@ document.addEventListener("DOMContentLoaded", function(event){
 
   picButton[0].addEventListener("click", function(){
 
-    Logos.style = display:block;
-    Packaging.style = display:none;
-    Posters.style = display:none;
+    Logos.style = "display:block";
+    Packaging.style = "display:none";
+    Posters.style = "display:none";
   });
 
   picButton[1].addEventListener("click", function(){
 
-    Logos.style = display:none;
-    Packaging.style = display:block;
-    Posters.style = display:none;
+    Logos.style = "display:none";
+    Packaging.style = "display:block";
+    Posters.style = "display:none";
   });
 
   picButton[2].addEventListener("click", function(){
 
-    Logos.style = display:none;
-    Packaging.style = display:none;
-    Posters.style = display:block;
+    Logos.style = "display:none";
+    Packaging.style = "display:none";
+    Posters.style = "display:block";
   });
 
     // end of nav events
