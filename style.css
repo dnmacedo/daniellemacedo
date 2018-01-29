@@ -210,6 +210,7 @@ table {
 		position: relative;
 		width: 266px;
 		height: 266px;
+		margin: auto;
 	}
 
 	.picbutton p {
@@ -231,6 +232,7 @@ table {
 		color: white;
 		cursor: pointer;
 	}
+
 
 	.heading {
 		font-size: 35px;
