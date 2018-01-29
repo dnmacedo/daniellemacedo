@@ -10,29 +10,23 @@ document.addEventListener("DOMContentLoaded", function(event){
 
   picButton[0].addEventListener("click", function(){
 
-    window.scroll({
-      top: 430,
-      left: 0,
-      behavior: "smooth"
-    });
+    Logos.style = display:block;
+    Packaging.style = display:none;
+    Posters.style = display:none;
   });
 
   picButton[1].addEventListener("click", function(){
 
-    window.scroll({
-      top: 4050,
-      left: 0,
-      behavior: "smooth"
-    });
+    Logos.style = display:none;
+    Packaging.style = display:block;
+    Posters.style = display:none;
   });
 
   picButton[2].addEventListener("click", function(){
 
-    window.scroll({
-      top: 6100,
-      left: 0,
-      behavior: "smooth"
-    });
+    Logos.style = display:none;
+    Packaging.style = display:none;
+    Posters.style = display:block;
   });
 
     // end of nav events
