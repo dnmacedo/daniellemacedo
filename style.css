@@ -483,7 +483,9 @@ table {
 /* for iPad (horizontal) or iPad Pro (vertical) */
 @media (max-width: 1100px) {
 
-
+	#down_arrow {
+		display: hidden;
+	}
 
 }
 
