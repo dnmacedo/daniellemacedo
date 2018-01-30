@@ -53,26 +53,26 @@
           <p id="formP">*If you would like me to contact you in return, please be sure to leave your phone, email, or both!</p>
 
           <article>
-            <form method="post" name="emailForm" action="contact.php">
+            <form method="POST" name="emailForm" action="https://formspree.io/dnmacedo1@gmail.com">
               <div>
-                <label for="name">Your name*</label>
-                <input type="text" name="cf_name">
+                <label for="name">Name*</label>
+                <input type="text" name="name" placeholder="Your name">
               </div>
 
               <div>
-                <label for="email">Contact Info (email/phone)</label>
-                <input type="text" name="cf_email">
+                <label for="email">Email</label>
+                <input type="text" name="_replyto" placeholder="Your email">
               </div>
 
               <div>
-                <label for="message">Leave a message*</label>
-                <textarea name="cf_message"></textarea>
+                <label for="message">Message*</label>
+                <textarea name="_message" placeholder="Hi Dani..."></textarea>
               </div>
 
               <!--add a div with label and text input with name=userColor-->
 
               <input type="submit" value="Send"/>
-              <input type="reset" value="Clear">
+
 
             </form>
 
