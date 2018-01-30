@@ -474,10 +474,16 @@ table {
 		transform: translateZ(-2px) scale(3);
 	}
 
+	#down_arrow {
+		display: hidden;
+	}
+
 }
 
 /* for iPad (horizontal) or iPad Pro (vertical) */
 @media (max-width: 1100px) {
+
+
 
 }
 
