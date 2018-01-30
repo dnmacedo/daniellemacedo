@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(event){
     var elements = document.getElementsByClassName("photo");
 
     // filename array
-    var fileName = ["bandit.jpg", "beach.jpg", "boots.JPG", "bridge.jpg", "bulb.JPG", "lights.JPG", "catRoad.JPG", "owl.JPG", "room.JPG", "sanctuary.JPG", "stitches.JPG", "stitches2.JPG", "tree.jpg", "trees.jpg", "wall.jpg"];
+    var fileName = ["bandit.jpg", "beach.JPG", "boots.JPG", "bridge.jpg", "bulb.JPG", "lights.JPG", "catRoad.JPG", "owl.JPG", "room.JPG", "sanctuary.JPG", "stitches.JPG", "stitches2.JPG", "tree.jpg", "trees.jpg", "wall.jpg"];
 
     var title = ["Bandit", "Leguna", "Boots for Sale", "Flight", "Light Bulb", "Lights", "Cat in the Arboretum", "Owl", "Room-ination", "Sanctuary", "Stitches #1", "Stitches #2", "Treetop", "Algae Galaxy", "Old Towne Sacramento"];
 
