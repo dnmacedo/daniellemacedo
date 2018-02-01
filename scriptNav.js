@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function(event){
   var graphicNav = document.getElementById("graphicNav");
   var photoNav = document.getElementById("photoNav");
   var contactNav = document.getElementById("contactNav");
+  var arrow = document.getElementById("down_arrow");
 
   var navLink = [homeNav, artNav, graphicNav, photoNav, contactNav];
 
@@ -28,5 +29,9 @@ document.addEventListener("DOMContentLoaded", function(event){
     });
 
   }
+
+  arrow.addEventListener("click", function(){
+    
+  });
 
 });
