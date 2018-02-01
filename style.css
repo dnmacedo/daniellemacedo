@@ -541,13 +541,9 @@ table {
 	}
 
 	nav {
-		display: block;
+		display: none;
 		width: 100%;
 		background-color: grey;
-	}
-
-	nav ul, nav:active ul {
-		display: none;
 	}
 
 	nav ul li{
@@ -558,7 +554,6 @@ table {
 		border-color: white;
 		position: relative;
 	}
-
 
 	a {
 		text-decoration: none;
