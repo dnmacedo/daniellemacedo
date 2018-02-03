@@ -537,11 +537,11 @@ table {
 		position: relative;
 		top: 0;
 		margin: auto;
-		z-index: 4;
+		z-index: 1;
 	}
 
 	nav {
-		display: none;
+		display: block;
 		width: 100%;
 		background-color: grey;
 	}
