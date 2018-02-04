@@ -72,7 +72,7 @@ table {
 		background-size: cover;
 	}
 
-	#up_arrow, #down_arrow {
+	#down_arrow {
 		display: none;
 	}
 
@@ -104,8 +104,7 @@ table {
 	header img {
 		display: inline-block;
 		height: 80%;
-		max-width: 145px;
-		top: 10%;
+		max-width: 100px;
 		left: 2%;
 		vertical-align: middle;
 		position: relative;
@@ -512,7 +511,22 @@ table {
 }
 
 /* For mobile version */
-@media (max-width: 450px) {
+@media (max-width: 415px) {
+
+	main {
+		width: 100%;
+
+	}
+
+	header {
+		background-color: transparent;
+	}
+
+	header img {
+		display: block;
+		margin:auto;
+		position: relative;
+	}
 
 
 	#dbdlogo_link {
@@ -530,11 +544,12 @@ table {
 	} */
 
 	#down_arrow {
-		display: block;
-		position: relative;
 		top: 0;
 		margin: auto;
 		z-index: 1;
+		display: block;
+		max-width: 75px;
+		position: relative;
 	}
 
 	nav {
@@ -605,6 +620,16 @@ table {
 		height: 200px;
 	}
 
+	#MaizmeLogo {
+		display: none;
+	}
+
+	#MaizmePkg {
+		float: none;
+		width: 100%;
+		margin: 30px 0;
+	}
+
 	#logoImgs {
 		margin-top: 50px;
 	}
@@ -615,24 +640,38 @@ table {
 	}
 
 	#artwork, #photography {
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content: space-around;
+		display: block;
+		margin: auto;
 	}
 
 	#artSec, #photoSec {
-		min-width: 450px;
-		max-width: 700px;
-		margin: 0 20px;
+		position: relative;
+		width: 100%;
+		margin: 0;
 	}
 
 	#artThumbs, #photoThumbs {
 		display: flex;
 		flex-wrap: wrap;
+		width: 400px;
 	}
 
 	#artThumbs img, #photoThumbs img {
 		margin: 5px;
+	}
+
+	.art, .photo {
+		width: 110px;
+		height: 110px;
+		background-color: transparent;
+	}
+
+	.preview {
+		min-width: 100px;
+	}
+
+	.preview img {
+		width: 100%;
 	}
 
 	#Packaging img {
@@ -640,37 +679,40 @@ table {
 	}
 
 	#Posters img {
-		
 		float: none;
 		width: 100%;
 		margin: auto;
 	}
 
+	#contact {
+		width: 78%;
+		margin: 0 10px;
+	}
+
 	article {
-		margin: 30px auto;
-		width: 4in;
+		display: inline;
+		margin: 30px 0;
+		width: 100%;
 	}
 
 	#formP {
 		font-size: 16px;
 		padding: 30px 0;
-		margin: auto;
-		width: 4in;
+		margin: 0;
+		width: 300px;
 	}
 
 	label{
-	  width:4in;
+	  width:100%;
 	  display:block;
 	}
 
-	#MaizmeLogo {
-		display: none;
+	input[type="text"] {
+	  width: 100%;
 	}
 
-	#MaizmePkg {
-		float: none;
-		width: 100%;
-		margin: 30px 0;
+	textarea {
+		width:100%;
 	}
 
 
