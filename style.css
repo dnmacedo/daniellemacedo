@@ -605,6 +605,10 @@ table {
 		height: 200px;
 	}
 
+	#logoImgs {
+		margin-top: 50px;
+	}
+
 	#Logos img {
 		transform: scale(.9);
 		margin: auto;
