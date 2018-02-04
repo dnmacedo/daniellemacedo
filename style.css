@@ -593,7 +593,8 @@ table {
 	}
 
 	#about p {
-		height: 200px;
+		padding: 20px;
+		height: 250px;
 	}
 
 
