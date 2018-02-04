@@ -514,9 +514,6 @@ table {
 /* For mobile version */
 @media (max-width: 450px) {
 
-	header {
-		position: absolute;
-	}
 
 	#dbdlogo_link {
 		display: none;
@@ -541,7 +538,7 @@ table {
 	}
 
 	nav {
-		display: block;
+		display: none;
 		width: 100%;
 		background-color: grey;
 	}
@@ -553,6 +550,8 @@ table {
 		border-bottom: 4px;
 		border-color: white;
 		position: relative;
+		width: 100px;
+		margin: auto;
 	}
 
 	a {
