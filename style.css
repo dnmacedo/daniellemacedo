@@ -178,10 +178,6 @@ table {
 	  transform: translateZ(-1px) scale(2);
 	}
 
-	#graphicsP {
-		transform: translateZ(-17px) scale(18);
-	}
-
 	#homePage_parallax {
 		transform: translateZ(-2px) scale(3);
 	}
@@ -584,6 +580,7 @@ table {
 
 	p {
 		display: inline-block;
+		max-width: 100%;
 	}
 
 	p, .heading, .subheading {
@@ -600,8 +597,9 @@ table {
 	}
 
 	.picbutton p {
-		background-color: rgba(0, 0, 0, 0.50);
+		background-color: rgba(0, 0, 0, 0.3);
 		color: white;
+		font-size: 30px;
 	}
 
 	.links {
@@ -663,6 +661,10 @@ table {
 		width: 110px;
 		height: 110px;
 		background-color: transparent;
+	}
+
+	.subheading {
+		display: inline-block;
 	}
 
 	.preview {
