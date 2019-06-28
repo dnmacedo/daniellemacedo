@@ -175,7 +175,7 @@ table {
 	}
 
 	.parallax__layer--back {
-	  transform: translateZ(-1px) scale(2);
+	  transform: translateZ(-3px) scale(4);
 	}
 
 	#homePage_parallax {
@@ -186,7 +186,7 @@ table {
 
 	section {
 		box-sizing: border-box;
-		min-height: 800px;
+		min-height: 745px;
 		width: 90%;
 		margin: auto;
 		padding: 60px 0;
